@@ -1,0 +1,31 @@
+#header .header-inner,
+#header #header-wrap {
+    height: 100px !important;
+}
+
+/* #logo {
+    padding-top: 10px !important;
+} */
+/* #mainMenu nav {
+    padding-top: 10px;
+} */
+
+/* #header #mainMenu nav > ul > li.hover-active > a,
+#header #mainMenu nav > ul > li.hover-active > span,
+#header #mainMenu nav > ul > li.current > a,
+#header #mainMenu nav > ul > li.current > span,
+#header #mainMenu nav > ul > li:hover > a,
+#header #mainMenu nav > ul > li:hover > span,
+#header #mainMenu nav > ul > li:focus > a,
+#header #mainMenu nav > ul > li:focus > span {
+    color: #000;
+} */
+
+.bg-yellow {
+    background-color: #f7b034 !important;
+}
+
+#page-title[data-bg-parallax],
+[data-bg-parallax] {
+    background-color: #01233d;
+}

@@ -1,0 +1,93 @@
+description = "Page Layout"
+==
+<!DOCTYPE html>
+<html lang="id-ID">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="firmansari" />
+    <meta name="title" content="{{ this.page.meta_title }}" />
+    <meta name="description"
+        content="PT Bhineka Inti Sertifikasi merupakan perusahaan swasta nasional berbadan hukum berbentuk 'Perseroan', yang didirikan melalui akte Notaris Mulhendris, S.H, CN, No. 02 tanggal 18 Mei 2019 dan telah disahkan oleh Menteri Hukum dan HAM pada tanggal 24 Mei 2019, nomor AHU-0026401.AH.01.01.TAHUN 2019">
+    <title>{{ this.page.title }}</title>
+    <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ 'assets/images/favicon/apple-icon-57x57.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ 'assets/images/favicon/apple-icon-60x60.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ 'assets/images/favicon/apple-icon-72x72.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ 'assets/images/favicon/apple-icon-76x76.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ 'assets/images/favicon/apple-icon-114x114.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ 'assets/images/favicon/apple-icon-120x120.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ 'assets/images/favicon/apple-icon-144x144.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ 'assets/images/favicon/apple-icon-152x152.png'|theme }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/images/favicon/apple-icon-180x180.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ 'assets/images/favicon/android-icon-192x192.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicon/favicon-32x32.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ 'assets/images/favicon/favicon-96x96.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/images/favicon/favicon-16x16.png'|theme }}">
+    <link rel="manifest" href="{{ 'assets/images/favicon/manifest.json'|theme }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ 'assets/images/favicon/ms-icon-144x144.png'|theme }}">
+    <meta name="theme-color" content="#ffffff">
+    <link href="{{ 'assets/css/plugins.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css'|theme }}?1" rel="stylesheet">
+    <link href="{{ 'assets/css/custom.css'|theme }}?2" rel="stylesheet">
+    {% styles %}
+</head>
+
+<body>
+    <div class="body-inner">
+        <header id="header" data-fullwidth="true" data-transparent="true" class="dark submenu-light">
+            <div class="header-inner d-flex align-items-center">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="{{ 'assets/images/logobis.png'|theme}}" class="logo-default">
+                            <img src="{{ 'assets/images/logobis.png'|theme}}" class="logo-dark">
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!-- Search -->
+                    <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i
+                                class="icon-x"></i></a>
+                        <form class="search-form" action="search-results-page.html" method="get">
+                            <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+                            <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+                        </form>
+                    </div>
+                    <!-- end: search -->
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                            <li>
+                                <a id="btn-search" href="#"> <i class="icon-search"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    {% partial 'site/menu' %}
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        {% page %}
+        {% partial 'site/footer' %}
+    </div>
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+    <script src="{{ 'assets/js/plugins.js'|theme }}"></script>
+    <script src="{{ 'assets/js/functions.js'|theme }}"></script>
+    {% scripts %}
+</body>
+
+</html>
